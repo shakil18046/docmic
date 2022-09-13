@@ -1,0 +1,214 @@
+.nav-bg-color{
+    background: rgb(247,247,247);
+background: linear-gradient(90deg, rgba(247,247,247,1) 0%, rgba(144,212,237,1) 48%, rgba(0,212,255,0.2861519607843137) 72%);
+}
+.main-bg{
+    background: url(../../Assets/Desktop-3.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.text-color{
+    color: #575757;
+}
+.text-color:hover{
+    color: #2D89FF;
+}
+.text-color:active{
+    background-color: transparent;
+}
+.hero-heading{
+    line-height: 70px;
+}
+.hero-paragraph{
+    width: 50%;
+    padding-top: 15px;
+}
+.hero-btn{
+    padding: 15px 30px;
+    background-color: #2D89FF;
+    display: inline-block;
+    border-radius: 5px;
+}
+.hero-column-two{
+    display: flex;
+    flex-direction: column;
+
+}
+.hero-second-column-btn{
+    display: flex;
+    padding: 12px 28px;
+    background-color: #642DFF;
+    border-radius: 5px;
+    align-items: center;
+    transform: translate(-60px, -174px);
+}
+.hero-second-column-btn img{
+    padding-right: 5px;
+}
+/* service area stat */
+.service-card{
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    border: 1px solid white;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 2px 4px rgba(55, 55, 55, 0.08);
+}
+.service-icon-wrapper{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+}
+.service-card:hover{
+    border: 1px solid #2D89FF;
+}
+.service-btn{
+    transition: all .3s ease-in-out;
+}
+.service-card:hover .service-btn{
+    color: #2D89FF;
+
+}
+/* about-area-start */
+
+.about-img-wrapper{
+    display: flex;
+    justify-content: end;
+}
+/* feature card */
+
+.feature-card{
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    border: 1px solid white;
+    box-shadow: 0px 2px 4px rgba(55, 55, 55, 0.08);
+}
+.feature-card:hover{
+    transform: translateY(-5px);
+    transition: all .3s ease-out;
+    box-shadow: 0px 7px 15px rgb(55 55 55 / 15%);
+}
+.feature-icon-wrapper{
+    position: absolute;
+    top: 8%;
+    right: 6%;
+}
+.slider-wrapper{
+    width: 65%;
+    margin: auto;
+}
+.custom-slider{
+    background-color: white;
+    position: relative;
+    filter: drop-shadow(0px 10px 20px rgba(215, 186, 252, 0.29));
+}
+.slider-image{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.slider-image-star{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+.accordion__button{
+    background-color: transparent!important;
+    padding: 18px 18px 18px 0px!important;
+}
+.accordion {
+    border: 0px solid rgba(0, 0, 0, 0.1) !important;
+    border-radius: 0px;
+}
+.accordion__item + .accordion__item {
+    border-top: 0px solid rgba(0, 0, 0, 0.1)!important;
+}
+.accordion__button:before{
+    color: #2D89FF;
+}
+.contact-home{
+    background: rgba(255, 255, 255, 0.25);
+box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(100px);
+border-radius: 10px;
+/* @media only screen and (max-width: 767px) */
+}
+.home-contact-input{
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    border-radius: 0px;
+    width: 100%!important;
+}
+.input:focus {
+    outline: 0px solid hsla(var(--bc) / 0.2);
+    outline-offset: 0px;
+}
+.contact-img1{
+    position: absolute;
+    right: 30px;
+
+}
+.contact-img2{
+    position: absolute;
+    bottom: 100px;
+}
+
+/* responsive start */
+@media screen and (max-width: 1023px){
+    .about-img-wrapper{
+        justify-content: left;
+    }
+    .feature-area{
+        display: flex;
+    flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width: 767px){
+    .hero-paragraph{
+        width: 100%;
+        text-align: center;
+    }
+    .hero-heading{
+        line-height: 50px;
+    }
+    .hero-btn-wrapper{
+        text-align: center;
+    }
+    .hero-image-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    /* about-area */
+    .about-img-wrapper{
+        justify-content: center;
+    }
+    /* feature area */
+    .feature-image-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    /* slider */
+    .slider-main-img{
+        display: none;
+    }
+}
+@media screen and (max-width: 576px){
+    .px-mobile{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .hero-heading{
+        line-height: 40px;
+    }
+    .hero-btn-wrapper{
+        text-align: center;
+    }
+    .hero-btn{
+        padding: 12px 26px;
+        border-radius: 5px;
+    }
+    .slider-wrapper {
+        width: 90%;
+    }
+}

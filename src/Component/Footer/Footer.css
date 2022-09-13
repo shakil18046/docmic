@@ -1,0 +1,15 @@
+.social-icon-list-wrapper li{
+    display: inline-block;
+}
+.social-icon-list{
+    margin-right: 5px;
+}
+.quicklink-list{
+    margin-bottom: 8px;
+}
+.quicklink-list-wrapper{
+    padding-top: 10px;
+}
+.service-list-wrapper{
+    padding-top: 26px;
+}
